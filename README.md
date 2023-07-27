@@ -1,8 +1,3 @@
-<a href = "https://www.agustinlemes.com" rel = "noopener noreferrer" target = "_blank">
-    <h1 align="center">
-        Agustín Lemes
-    </h1>
-</a>
-<div align="center">
-  <img alt="Logo" src="https://www.agustinlemes.com/img/demo.png"/>
-</div>
+# [Agustín Lemes](https://www.agustinlemes.com)
+
+![Demo Image](https://www.agustinlemes.com/img/demo.png)
