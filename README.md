@@ -4,5 +4,5 @@
     </h1>
 </a>
 <div align="center">
-  <img alt="Logo" src="www.agustinlemes.com/img/demo.png"/>
+  <img alt="Logo" src="https://www.agustinlemes.com/img/demo.png"/>
 </div>
