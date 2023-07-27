@@ -1,0 +1,149 @@
+:root {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  /* 
+  Paleta de colores
+  Claros (eccdaa, dcb993) 
+  Accion (de9475, d8796b, a23a34, b1483e, 691d1b, 291512, 200f0c)
+  - Accion (d8796b, a23a34)
+  Fondo (423321, 252120, 1c1814)   
+  Oscuros (655445, 24201e, 070705)
+  Oscuro Recuadro (655445)
+  */
+}
+
+::-webkit-scrollbar {
+  background: #090a07;
+  width: 0.7rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1814;
+  border-radius: 1rem;
+  height: 1rem;
+  min-height: 1rem;
+  width: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.tag {
+  color: #d8796b;
+  background-color: #5e231e;
+  /* rounded pill */
+  border-radius: 9999px;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-right: 0.2rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.c-arrow {
+  font-size: small;
+  transform: rotate(45deg);
+}
+
+.color-primary-light {
+  color: #eccdaa;
+}
+
+.color-primary-light-50 {
+  color: #dcb993;
+}
+
+.color-primary {
+  color: #c6a37d;
+}
+
+.color-action-light {
+  color: #d8796b;
+}
+
+.color-action-secondary {
+  color: #848158;
+}
+
+.hover-action-secondary:hover {
+  color: #95803c;
+}
+
+.color-dark {
+  color: #070705;
+}
+
+.color-gray {
+  color: #846a58;
+}
+
+/* scale childs */
+
+.expand {
+  transition: all 0.1s ease-in-out;
+}
+
+.expand:hover {
+  transform: scale(1.2);
+}
+
+.expand-sm {
+  transition: all 0.2s ease-in-out;
+}
+
+.expand-sm:hover {
+  transform: scale(1.02);
+}
+
+.hover-action-light:hover {
+  color: #a23a34;
+}
+
+.bg-dark {
+  background-color: #1c1814;
+  /* border-left: 4px solid #d8796baa; */
+}
+
+.hover-bg-dark:hover {
+  background-color: #030603;
+  /* background: linear-gradient(45deg, #070705 0%, #24201f 100%); */
+  /* background: radial-gradient(circle at center, #24201f 0%, #070705 100%); */
+
+  /* add a border top more ligth */
+  /* border-left: 4px solid #a23a34; */
+
+  /* add a small shadow only bottom */
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.bg-primary {
+  background-color: #423321;
+
+  /* bg gradient from 1c1814 to 252120 */
+  /* background: radial-gradient(circle, #1c1814 0%, #423321 100%); */
+  /* background: radial-gradient(circle, #423321 0%, #1c1814 100%); */
+}
