@@ -582,6 +582,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.ms-1 {
+  margin-inline-start: 0.25rem;
+}
+
 .ms-3 {
   margin-inline-start: 0.75rem;
 }
@@ -624,6 +628,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .rounded {
@@ -776,6 +784,10 @@ a {
 .c-arrow {
   font-size: small;
   transform: rotate(45deg);
+}
+
+.c-mt-arrow {
+  margin-top: 0.2rem;
 }
 
 .color-primary-light {
