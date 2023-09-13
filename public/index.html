@@ -46,34 +46,39 @@
   >
     <!-- Main -->
     <section>
-      <header>
-        <div class="flex items-center">
-          <h1 class="color-primary-light text-4xl font-bold">Agustín Lemes</h1>
-          <a
-            href="es"
-            class="ms-auto color-action-light hover-action-light text-sm flex items-center font-normal"
-            >Español
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 384 512"
-              height="1rem"
-              class="c-arrow ms-1"
-            >
-              <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-              <path
-                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
-                fill="currentColor"
-              />
-            </svg>
-          </a>
-        </div>
+      <header class="flex flex-col items-center">
+        <a
+          href="es"
+          class="justify-end ms-auto color-action-light hover-action-light text-sm flex items-center font-normal"
+          >Español
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+            height="1rem"
+            class="c-arrow ms-1"
+          >
+            <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+        <h1
+          class="color-primary-light font-bold mt-8 text-4xl sm:text-4xl md:text-5xl lg:text-6xl"
+        >
+          Agustin Lemes
+        </h1>
+
         <h2 class="color-primary-light-50 text-lg font-medium mt-2">
-          Full Stack Developer
+          <span class="color-action-light">F</span>ull
+          <span class="color-action-light">S</span>tack
+          <span class="color-action-light">D</span>eveloper
         </h2>
         <p class="mt-2 text-sm">¡Smile, it's contagious!</p>
       </header>
 
-      <footer class="mt-7 text-2xl">
+      <footer class="mt-7 text-2xl justify-center flex">
         <ul class="flex">
           <li>
             <a
@@ -145,26 +150,153 @@
       </footer>
     </section>
 
-    <!-- About -->
+    <!-- Projects -->
     <section class="mt-16">
       <h2 class="color-primary-light-50 text-sm font-bold uppercase mb-6">
-        About
+        Projects
       </h2>
-      <p class="text-sm">
-        Video games ignited my fascination with programming from the age of 15.
-        This newfound world inspired me to want to create my own games, viewing
-        them as a unique form of art that embodies passion, entertainment, and
-        unforgettable experiences.
-      </p>
-      <br />
-      <p class="text-sm">
-        Today, I develop video games with much love and aspire to extend this
-        passion towards projects that make a difference in people's lives. In
-        the future, I look forward to contributing to areas such as education,
-        the development of bionic body parts (involving robotics, design, and
-        development), the creation of artificial intelligence to aid health and
-        research, automation in the industry, and spacecraft construction.
-      </p>
+      <ul class="flex flex-col md:flex-row">
+        <li class="flex-1 rounded-md hover-bg-dark bg-dark expand-sm">
+          <a
+            href="https://www.e-comerce.project.agustinlemes.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="ECommerce"
+            class="block p-4 color-primary-light hover-action-light"
+          >
+            <h3 class="font-bold flex items-center">
+              ECommerce
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                height="1rem"
+                class="c-arrow ms-1"
+              >
+                <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+                  fill="currentColor"
+                />
+              </svg>
+            </h3>
+            <p class="color-gray text-sm font-semibold">
+              Awesome team, awesome project!
+            </p>
+            <img
+              src="./img/e-commerce.webp"
+              alt="ECommerce"
+              width="100%"
+              height="auto"
+              class="mt-3 rounded"
+            />
+            <footer class="mt-3">
+              <span class="tag">NodeJS</span>
+              <span class="tag">Express</span>
+              <span class="tag">Sequelize</span>
+              <span class="tag">Git</span>
+            </footer>
+          </a>
+        </li>
+        <li
+          class="flex-1 rounded-md hover-bg-dark bg-dark expand-sm my-5 md:my-0 md:mx-5"
+        >
+          <a
+            href="https://movies.agustinlemes.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="MovieFlix"
+            class="block p-4 color-primary-light hover-action-light"
+          >
+            <h3 class="font-bold flex items-center">
+              MovieFlix
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                height="1rem"
+                class="c-arrow ms-1"
+              >
+                <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+                  fill="currentColor"
+                />
+              </svg>
+            </h3>
+
+            <p class="color-gray text-sm font-semibold">
+              ¿You like movies? This is your site!
+            </p>
+            <img
+              src="./img/movieflix.webp"
+              alt="movieFlix"
+              width="100%"
+              height="auto"
+              class="mt-3 rounded"
+            />
+            <footer class="mt-3">
+              <span class="tag">React</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">TMBD (API)</span>
+            </footer>
+          </a>
+        </li>
+        <li class="flex-1 rounded-md hover-bg-dark bg-dark expand-sm">
+          <a
+            href="https://memo.agustinlemes.com"
+            title="Memorize"
+            class="block p-4 color-primary-light hover-action-light"
+          >
+            <h3 class="font-bold flex items-center">
+              Memorize
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                height="1rem"
+                class="c-arrow ms-1"
+              >
+                <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+                  fill="currentColor"
+                />
+              </svg>
+            </h3>
+            <p class="color-gray text-sm font-semibold">
+              So... how good is your memory?
+            </p>
+            <img
+              src="./img/memorize.webp"
+              alt="memorize"
+              width="100%"
+              height="auto"
+              class="mt-3 rounded"
+            />
+            <footer class="mt-3">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </footer>
+          </a>
+        </li>
+      </ul>
+
+      <a href="." title="All projects" class="hidden">
+        All projects
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 384 512"
+          height="1rem"
+          class="c-arrow ms-1"
+        >
+          <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+            fill="currentColor"
+          />
+        </svg>
+      </a>
     </section>
 
     <!-- Experience -->
@@ -317,153 +449,26 @@
       </ul>
     </section>
 
-    <!-- Projects -->
-    <section class="mt-16">
+    <!-- About -->
+    <section class="mt-16 p-4">
       <h2 class="color-primary-light-50 text-sm font-bold uppercase mb-6">
-        Projects
+        About
       </h2>
-      <ul class="flex flex-col md:flex-row">
-        <li class="flex-1 rounded-md hover-bg-dark bg-dark expand-sm">
-          <a
-            href="https://www.e-comerce.project.agustinlemes.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="eCommerce"
-            class="block p-4 color-primary-light hover-action-light"
-          >
-            <h3 class="font-bold flex items-center">
-              eCommerce
-
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 384 512"
-                height="1rem"
-                class="c-arrow ms-1"
-              >
-                <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <path
-                  d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
-                  fill="currentColor"
-                />
-              </svg>
-            </h3>
-            <p class="color-gray text-sm font-semibold">
-              Awesome team, awesome project!
-            </p>
-            <img
-              src="./img/e-commerce.webp"
-              alt="eCommerce"
-              width="100%"
-              height="auto"
-              class="mt-3 rounded"
-            />
-            <footer class="mt-3">
-              <span class="tag">NodeJS</span>
-              <span class="tag">Express</span>
-              <span class="tag">Sequelize</span>
-              <span class="tag">Git</span>
-            </footer>
-          </a>
-        </li>
-        <li
-          class="flex-1 rounded-md hover-bg-dark bg-dark expand-sm my-5 md:my-0 md:mx-5"
-        >
-          <a
-            href="https://movies.agustinlemes.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="MovieFlix"
-            class="block p-4 color-primary-light hover-action-light"
-          >
-            <h3 class="font-bold flex items-center">
-              MovieFlix
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 384 512"
-                height="1rem"
-                class="c-arrow ms-1"
-              >
-                <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <path
-                  d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
-                  fill="currentColor"
-                />
-              </svg>
-            </h3>
-
-            <p class="color-gray text-sm font-semibold">
-              ¿You like movies? This is your site!
-            </p>
-            <img
-              src="./img/movieflix.webp"
-              alt="movieFlix"
-              width="100%"
-              height="auto"
-              class="mt-3 rounded"
-            />
-            <footer class="mt-3">
-              <span class="tag">React</span>
-              <span class="tag">Bootstrap</span>
-              <span class="tag">TMBD (API)</span>
-            </footer>
-          </a>
-        </li>
-        <li class="flex-1 rounded-md hover-bg-dark bg-dark expand-sm">
-          <a
-            href="https://memo.agustinlemes.com"
-            title="Memorize"
-            class="block p-4 color-primary-light hover-action-light"
-          >
-            <h3 class="font-bold flex items-center">
-              Memorize
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 384 512"
-                height="1rem"
-                class="c-arrow ms-1"
-              >
-                <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <path
-                  d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
-                  fill="currentColor"
-                />
-              </svg>
-            </h3>
-            <p class="color-gray text-sm font-semibold">
-              So... how good is your memory?
-            </p>
-            <img
-              src="./img/memorize.webp"
-              alt="memorize"
-              width="100%"
-              height="auto"
-              class="mt-3 rounded"
-            />
-            <footer class="mt-3">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
-            </footer>
-          </a>
-        </li>
-      </ul>
-
-      <a href="." title="All projects" class="hidden">
-        All projects
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 384 512"
-          height="1rem"
-          class="c-arrow ms-1"
-        >
-          <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-          <path
-            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
-            fill="currentColor"
-          />
-        </svg>
-      </a>
+      <p class="text-sm">
+        Video games ignited my fascination with programming from the age of 15.
+        This newfound world inspired me to want to create my own games, viewing
+        them as a unique form of art that embodies passion, entertainment, and
+        unforgettable experiences.
+      </p>
+      <br />
+      <p class="text-sm">
+        Today, I develop video games with much love and aspire to extend this
+        passion towards projects that make a difference in people's lives. In
+        the future, I look forward to contributing to areas such as education,
+        the development of bionic body parts (involving robotics, design, and
+        development), the creation of artificial intelligence to aid health and
+        research, automation in the industry, and spacecraft construction.
+      </p>
     </section>
 
     <!-- Footer -->
