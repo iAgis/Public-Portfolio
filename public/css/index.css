@@ -151,3 +151,9 @@ a {
   /* background: radial-gradient(circle, #1c1814 0%, #423321 100%); */
   /* background: radial-gradient(circle, #423321 0%, #1c1814 100%); */
 }
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.6;
+}
