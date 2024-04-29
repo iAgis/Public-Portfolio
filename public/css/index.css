@@ -157,3 +157,32 @@ a {
   cursor: default;
   opacity: 0.6;
 }
+
+#contenedor {
+  position: relative;
+  width: 100%; /* Ajusta según el tamaño deseado del área de movimiento */
+  height: 128px; /* Ajusta según la altura de tu imagen */
+  overflow: hidden;
+  /* border: 1px solid #000; /* Para visualización de borde */
+}
+
+.gato {
+  width: 128px; /* Suponiendo L=800, entonces L/6 sería 133 */
+  height: 128px; /* Ajusta según la altura de tu imagen */
+  background-image: url("../img/SideWalk_Orange.png"); /* Asegúrate de poner la ruta correcta de la imagen */
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.animarGato {
+  animation: caminarGato 0.8s steps(6) infinite;
+}
+
+@keyframes caminarGato {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -768px;
+  } /* Mueve el fondo hasta el final de la imagen */
+}
