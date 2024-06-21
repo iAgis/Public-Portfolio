@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Establecer el idioma preferido si se selecciona otro idioma
-  window.setLanguage = function (lang) {
+  window.setLanguage = function (lang, event) {
+    event.preventDefault(); // Prevenir la acción predeterminada del enlace
     setPreferredLanguage(lang);
     redirectToLanguageVersion(lang);
   };
