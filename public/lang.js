@@ -1,20 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
   const supportedLangs = ["en", "es"];
   const defaultLang = "en";
-  let redirectAttempted = false;
 
   // Función para redirigir a la versión correcta del sitio
   function redirectToLanguageVersion(lang) {
-    if (redirectAttempted) return; // Evitar redirección múltiple
-    redirectAttempted = true;
-
     const currentUrl = window.location.href;
     const baseUrl = "https://www.agustinlemes.com";
     const langPath = lang === "en" ? "" : `/${lang}`;
-    const targetUrl = `${baseUrl}${langPath}`;
 
-    if (currentUrl !== targetUrl) {
-      window.location.href = targetUrl;
+    if (!currentUrl.includes(langPath)) {
+      window.location.href = `${baseUrl}${langPath}`;
     }
   }
 
@@ -27,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const browserLang = (navigator.language || navigator.userLanguage).split(
       "-"
     )[0];
-    // Si el idioma del navegador no está soportado, usar el idioma por defecto
     return supportedLangs.includes(browserLang) ? browserLang : defaultLang;
   }
 
