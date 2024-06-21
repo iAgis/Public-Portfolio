@@ -7,9 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentUrl = window.location.href;
     const baseUrl = "https://www.agustinlemes.com";
     const langPath = lang === "en" ? "" : `/${lang}`;
+    const targetUrl = `${baseUrl}${langPath}`;
 
-    if (!currentUrl.includes(langPath)) {
-      window.location.href = `${baseUrl}${langPath}`;
+    if (currentUrl !== targetUrl) {
+      window.location.href = targetUrl;
     }
   }
 
