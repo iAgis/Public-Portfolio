@@ -4,21 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Función para redirigir a la versión correcta del sitio
   function redirectToLanguageVersion(lang) {
-    const currentUrl = window.location.href;
-    const baseUrl = "https://www.agustinlemes.com";
-    const langPath = lang === "en" ? "" : `/${lang}`;
-
-    if (!currentUrl.includes(langPath)) {
-      window.location.href = `${baseUrl}${langPath}`;
-    }
+    if (lang === "en") window.location.href = "https://www.agustinlemes.com";
+    if (lang === "es") window.location.href = "https://www.agustinlemes.com/es";
   }
 
   // Obtener el idioma preferido almacenado o detectar el idioma del navegador
   function getPreferredLanguage() {
     const storedLang = localStorage.getItem("preferredLanguage");
-    if (storedLang && supportedLangs.includes(storedLang)) {
-      return storedLang;
-    }
+    if (storedLang && supportedLangs.includes(storedLang)) return storedLang;
     const browserLang = (navigator.language || navigator.userLanguage).split(
       "-"
     )[0];
