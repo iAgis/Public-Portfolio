@@ -4,8 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Función para redirigir a la versión correcta del sitio
   function redirectToLanguageVersion(lang) {
-    if (lang === "en") window.location.href = "https://www.agustinlemes.com";
-    if (lang === "es") window.location.href = "https://www.agustinlemes.com/es";
+    const currentUrl = window.location.href;
+    if (lang === "en" && !currentUrl.endsWith("/")) {
+      window.location.href = "https://www.agustinlemes.com";
+    } else if (lang === "es" && !currentUrl.endsWith("/es")) {
+      window.location.href = "https://www.agustinlemes.com/es";
+    }
   }
 
   // Obtener el idioma preferido almacenado o detectar el idioma del navegador
