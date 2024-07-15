@@ -38,5 +38,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Redirigir según el idioma preferido
   const preferredLang = getPreferredLanguage();
-  redirectToLanguageVersion(preferredLang);
+  // redirectToLanguageVersion(preferredLang);
 });
