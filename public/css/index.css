@@ -26,12 +26,12 @@ body {
 }
 
 ::-webkit-scrollbar {
-  background: #090a07;
+  background: #000;
   width: 0.7rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1c1814;
+  background: #555;
   border-radius: 1rem;
   height: 1rem;
   min-height: 1rem;
@@ -41,7 +41,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #777;
 }
 
 .tag {
@@ -74,19 +74,19 @@ a {
 }
 
 .color-primary-light {
-  color: #eccdaa;
+  color: #35b082;
 }
 
 .color-primary-light-50 {
-  color: #dcb993;
+  color: #4cb990;
 }
 
 .color-primary {
-  color: #c6a37d;
+  color: #79caac;
 }
 
 .color-action-light {
-  color: #d8796b;
+  color: #e10531;
 }
 
 .color-action-secondary {
@@ -102,7 +102,7 @@ a {
 }
 
 .color-gray {
-  color: #846a58;
+  color: #8fd3ba;
 }
 
 /* scale childs */
@@ -124,11 +124,11 @@ a {
 }
 
 .hover-action-light:hover {
-  color: #a23a34;
+  color: #e7365a;
 }
 
 .bg-dark {
-  background-color: #1c1814;
+  background-color: #010101;
   /* border-left: 4px solid #d8796baa; */
 }
 
@@ -145,7 +145,7 @@ a {
 }
 
 .bg-primary {
-  background-color: #423321;
+  background-color: #111;
 
   /* bg gradient from 1c1814 to 252120 */
   /* background: radial-gradient(circle, #1c1814 0%, #423321 100%); */
@@ -169,9 +169,11 @@ a {
 .gato {
   width: 128px; /* Suponiendo L=800, entonces L/6 sería 133 */
   height: 128px; /* Ajusta según la altura de tu imagen */
-  background-image: url("../img/SideWalk_Orange.png"); /* Asegúrate de poner la ruta correcta de la imagen */
+  background-image: url("../img/SideWalk_Black.png"); /* Asegúrate de poner la ruta correcta de la imagen */
   background-repeat: no-repeat;
   position: absolute;
+
+  filter: drop-shadow(0 0 0.75rem #e10531);
 }
 
 .animarGato {
@@ -185,4 +187,16 @@ a {
   100% {
     background-position: -768px;
   } /* Mueve el fondo hasta el final de la imagen */
+}
+
+.c-drop-shadow {
+  filter: drop-shadow(0 0 0.3rem #e10531);
+}
+
+.c-drop-shadow-blue {
+  filter: drop-shadow(0 0 0.3rem #0088ff);
+}
+
+.c-drop-shadow-rose {
+  filter: drop-shadow(0 0 0.3rem #ff5794);
 }
